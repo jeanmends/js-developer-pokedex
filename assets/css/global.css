@@ -52,4 +52,135 @@ body {
     flex-direction: row;
     justify-content: center;
     
+}* {
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f6f8fc;
+}
+
+.content {
+    width: 100vw;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+    .content {
+        max-width: 992px;
+        height: auto;
+        margin: 1rem auto;
+        border-radius: 1rem;
+    }
+}
+
+#info{
+    z-index: 9999;
+   
+    
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    margin: auto;
+}
+
+.finally-info{
+    display: flex;
+    flex-direction: column;
+    
+    padding: 0;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    text-transform: capitalize;
+    border-radius: 10px;
+    box-shadow: 6px 9px 13px 0px rgba(0,0,0,0.79);
+        -webkit-box-shadow: 6px 9px 13px 0px rgba(0,0,0,0.79);
+        -moz-box-shadow: 6px 9px 13px 0px rgba(0,0,0,0.79);
+}
+
+.finally-info > .head-info > h1{
+    font-size: 1.5rem;
+    color: #ffffff;
+    margin-top: 20px;
+}
+
+.detail-info{
+    padding: 1rem;
+    background-color: inherit;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    
+}
+.side-arrow{
+    width: 55px;
+    box-shadow: 7px 7px 26px -3px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 7px 7px 26px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 7px 26px -3px rgba(0,0,0,0.75);
+}
+.big-img{
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.big-img > .pokemon-version{
+    width: 200px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    margin-top: -40px;
+}
+
+.big-img >.pokemon-version >img{
+    width: 100%;
+}
+
+.head-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 200px;
+    margin: 0;
+    color: #fff;
+}
+
+.head-info > img{
+    width: 50px;
+    background-color: #f6f8fc;
+    align-self: flex-start;
+}
+
+#shiny{
+    display: none;
+}
+
+#toggle-shiny-normal{
+    width: 70px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.lef-arrow{
+    align-self: flex-start;
 }
