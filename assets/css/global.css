@@ -7,6 +7,18 @@ body {
     background-color: #f6f8fc;
 }
 
+.dark-mode{
+    background-color: #2b292c; 
+}
+
+.dark-mode-content{
+    width: 100vw !important;
+    height: fit-content !important;
+    padding: 1rem !important;
+    background-color: #00023658 !important;
+    color: #f6f8fc !important;
+}
+
 .content {
     width: 100vw;
     height: 100vh;
@@ -43,13 +55,15 @@ body {
     
     padding: 0;
     align-items: center;
-    width: 300px;
+    width: 320px;
     height: max-content;
     text-transform: capitalize;
     border-radius: 10px;
     box-shadow: 6px 9px 13px 0px rgba(0,0,0,0.79);
         -webkit-box-shadow: 6px 9px 13px 0px rgba(0,0,0,0.79);
         -moz-box-shadow: 6px 9px 13px 0px rgba(0,0,0,0.79);
+    height: 500px;
+    overflow-x: auto;    
 }
 
 .finally-info > .head-info > h1{
@@ -157,6 +171,7 @@ body {
 
 .weight-height{
     display: flex;
+    width: 280px;
     flex-direction: row;
     justify-content: space-around;
     font-size: 1.1rem;
@@ -165,6 +180,10 @@ body {
 }
 
 .information-about-pokemon{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     margin: 0;
     padding: 0;
     width: 280px;
@@ -212,7 +231,7 @@ body {
 }
 
 .stats-names{
-    color: #f6f8fc;
+    color: #2b292c;
     font-size: 1rem;
 }
 
@@ -226,3 +245,70 @@ body {
      -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
      -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75)
 }
+
+.base-stats{
+    width: 250px;
+    background-color: #d3d1d1;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    padding: 10px;
+    
+}
+.base-stats > h3{
+    color: #2b292c;
+}
+
+
+/* */
+
+.checkbox {
+   
+    opacity: 0;
+    position: absolute;
+  }
+  
+  .checkbox-label {
+    margin-top:5px;
+    margin-left: 5px;
+    background-color: #111;
+    width: 60px;
+    height: 36px;
+    border-radius: 50px;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    box-shadow: -6px 7px 11px -3px rgba(255,255,255,0.3);
+        -webkit-box-shadow: -6px 7px 11px -3px rgba(255,255,255,0.3);
+        -moz-box-shadow: -6px 7px 11px -3px rgba(255,255,255,0.3);
+  }
+  
+  .fa-moon {
+    color: #f1c40f;
+    font-size: 1.5rem;
+}
+  
+  .fa-sun {
+    color: #f39c12;
+    font-size: 1.5rem;
+}
+  
+  .checkbox-label .ball {
+    background-color: #fff;
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+  }
+  
+  .checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+  }
+
+  

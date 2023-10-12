@@ -20,7 +20,7 @@ function convertPokemonToLi(pokemon) {
                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
-            <button class="more" value="${pokemon.number}">more</button>
+            <button class="more" value="${pokemon.number}">more info</button>
         </li>
     `
 }
@@ -50,4 +50,28 @@ loadMoreButton.addEventListener('click', () => {
 
 
 })
+/*
+function toggleDarkMode(){
+    let body = document.body;
+    body.classList.toggle("dark-mode");
 
+    let content = document.querySelector("section");
+    console.log(content)
+    content.classList.toggle("dark-mode-content");
+   
+}
+
+let toggleBtn = document.getElementById("toggle-theme");
+toggleBtn.addEventListener("click", toggleDarkMode);
+
+*/
+
+const checkbox = document.getElementById("checkbox");
+checkbox.addEventListener("change", () => {
+    let body = document.body;
+    body.classList.toggle("dark-mode");
+
+    let content = document.querySelector("section");
+    console.log(content)
+    content.classList.toggle("dark-mode-content");
+})

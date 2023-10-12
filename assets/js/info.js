@@ -74,6 +74,7 @@ document.body.addEventListener('click', function (evt) {
                     <div class='base-stats'>
                         <h3>Base Stats</h3>
                         ${jsonBody.stats.map((stats) => `<p class='stats-names'> ${stats.stat.name}: ${stats.base_stat}</p>`).join('')}
+                        <p class='stats-names'>Base experience: ${jsonBody.base_experience}</p>
                     </div>
                 </div>
             </div>    
